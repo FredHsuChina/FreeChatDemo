@@ -1,0 +1,19 @@
+<!--pages/post's.wxml-->
+<view>
+  <swiper indicator-dots='true' autoplay='ture' duration='500' interval='2000' circular='true'>
+    <swiper-item>
+      <image src="/images/avatar/iqiyi.png" ></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/avatar/vr.png" ></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/avatar/wx.png"></image>
+    </swiper-item>
+  </swiper>
+  <scroll-view >
+   <view>1</view>
+   <view>2</view>
+   <view>3</view>
+  </scroll-view>
+</view>
