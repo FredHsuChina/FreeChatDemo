@@ -15,13 +15,13 @@ Page({
       url: '../logs/logs'
     })
   },
-  onLoad: function () {
+  onLoad: function() {
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
         hasUserInfo: true
       })
-    } else if (this.data.canIUse){
+    } else if (this.data.canIUse) {
       // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
       // 所以此处加入 callback 以防止这种情况
       app.userInfoReadyCallback = res => {
@@ -49,6 +49,17 @@ Page({
     this.setData({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
+    })
+  },
+  openTap: function() {
+    console.log("openTap")
+    //这个方法和navigation跳转一样的的非模态跳转
+    // wx.navigateTo({
+    //   url: '../posts/posts',
+    // })
+    //模态跳转
+    wx.redirectTo({
+      url: '../posts/posts',
     })
   }
 })

@@ -2,7 +2,7 @@
 <view class='view_display'>
    <image src='/images/avatar/300.jpg' class='user_avatar'></image>
    <text class='name_display'>文锋</text>
-   <view class='webcome_container'>
+   <view class='webcome_container' bindtap='openTap'>
       <text class='webcome_display'>开启小程序之旅</text>
    </view>
 </view>

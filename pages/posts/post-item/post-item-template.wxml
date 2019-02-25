@@ -1,0 +1,17 @@
+<template name='postItem'>
+  <view class='view-contaner' catchtap = "onCellClick">
+    <view class='user-container'>
+      <image src="{{item.userPic}}" class='user-photo'></image>
+      <text class='user-date'>{{item.date}}</text>
+    </view>
+    <text class='post-title'>{{item.title}}</text>
+    <image src="{{item.postImage}}" class='post-image'></image>
+    <text class='post-content'>{{item.content}}</text>
+    <view class='post-container'>
+      <image src='../../images/icon/chat.png' class='post-chat'></image>
+      <text class='post-chat-number'>{{item.reading}}</text>
+      <image src='../../images/icon/view.png' class='post-chat'></image>
+      <text class='post-chat-number'>{{item.collection}}</text>
+    </view>
+  </view>
+</template>
